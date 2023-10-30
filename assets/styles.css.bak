@@ -8,7 +8,7 @@ body{
 #highlight{font-weight:600;color:#f3f3f3}
 .result li.active a{color:lightgray;cursor:default}
 .wrapper{width:100%;height:100%;border:1px solid #757575;margin-left:auto;margin-right:auto;box-shadow:5px 10px 18px #888888;background-color:#ffffff}
-.navbar{ top: 0;left: 0;width:100%;position: fixed;background-color:#020c11;padding-bottom:30px;margin-bottom:1px;z-index: 10;}
+.navbar{ top: 0;left: 0;width:100%;position: fixed;background-color:#020c11;padding-bottom:20px;margin-bottom:1px;z-index: 10;}
 .navbar-nav{margin-right:auto;margin-left:auto}
 .navbar-dark .navbar-brand{color:#d3d3d3}
 .navbar-light .navbar-brand:focus,.navbar-light .navbar-brand:hover{color:#f3f3f3}
@@ -29,7 +29,7 @@ hr{margin-top:20px;margin-bottom:25px;color:#020202}
 
 
 #banner-top {
-  margin-top: 75px;
+  margin-top: 50px;
     height: 170px;
     width: 100%;
     background: url("bg.jpg");
@@ -87,16 +87,15 @@ hr{margin-top:20px;margin-bottom:25px;color:#020202}
 
 /* Footer styling */
 footer {
-  /* margin: 0 auto; */
   background-color: #2f3a3f;
   color: #fff;
-   padding: 20px 0; 
+  padding: 20px 0;
   text-align: center;
 }
 
 .footer-content {
   max-width: 1200px;
-  margin-left: 0px;
+  margin: 0 auto;
 }
 
 .footer-links {
@@ -163,5 +162,4 @@ footer {
 .organizer p {
   font-size: 14px; /* Reduce the font size of organizer descriptions */
   text-align: justify;
-  line-height: 1.5 ;
 }
