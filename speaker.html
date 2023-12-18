@@ -121,11 +121,20 @@
 	<a class="navbar-brand" href="index.html#CallForAbstract" >
     Call For Abstract</a>
 
-    <a class="navbar-brand" href="index.html#schedule" >
+    <!--<a class="navbar-brand" href="#schedule" >
         Program</a>
-        
-        <a class="navbar-brand" href="speaker.html" >
-            Invited Speakers</a>     
+     <a class="navbar-brand" href="speaker.html" >
+            Invited Speakers</a> -->
+            <div class="dropdown" style="margin-top: 17px;">
+              <a class="navbar-brand dropdown-toggle" href="#" role="button" id="programDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                  Program
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="programDropdown">
+                  <li><a class="dropdown-item" href="#schedule">Schedule</a></li>
+                  <li><a class="dropdown-item" href="speaker.html">Invited Speakers</a></li>
+                  
+              </ul>
+          </div>   
             
         <a class="navbar-brand" href="index.html#venue" >
           Venue & Registration</a>
@@ -142,10 +151,10 @@
 
   <hr><br> 
 
-  <div class="container mt-4">
+  <div class="container mt-4" id="Disha">
     
   
-        <div class="section-header">
+        <div class="section-header" id="Aditya">
            <br>
             <h2 style="color: #5f5f5f;"> Speakers</h2>
             <hr><br>
@@ -168,11 +177,11 @@
             <h4>Disha Shrivastava </h4>
             <p><i>Google DeepMind, UK </i></p>
             <p><b>Title: Effectively Utilizing Contextual Cues for LLMs of Code <p></b>
-            <p><b>Abstract</b> Source code provides an exciting application area of deep learning methods, encompassing tasks like program synthesis, repair, and analysis, as well as tasks at the intersection of code and natural language. Although LLMs of code have recently seen significant success, they can face challenges in generalizing to unseen code. 
+            <p id="Dinesh"><b id="Hridesh">Abstract</b> Source code provides an exciting application area of deep learning methods, encompassing tasks like program synthesis, repair, and analysis, as well as tasks at the intersection of code and natural language. Although LLMs of code have recently seen significant success, they can face challenges in generalizing to unseen code. 
                 This can lead to inaccuracies especially when working with repositories that contain proprietary software or work-in-progress code. 
                 In this talk, I will discuss some ways of effectively harnessing useful signals from the available context such that it can improve the performance of the LLMs at the given task. </p>
      </div>
-      </div>
+      </div >
       
       <div class="col">
         <div class="speaker-card" data-aos="fade-up">
@@ -185,25 +194,21 @@
                 In this talk, I will share my experiences in building a generative AI-based solution called Watsonx Code Assistant for Z (WCA4Z) developed at IBM Labs. The input to WCA4Z is an enterprise-level COBOL application whereas, the output is an equivalent Java application.  The hallmark of our end-to-end WCA4Z solution is that it generates a Java code that is human-readable and maintainable which is not the case with several alternative solutions. Thus, WCA4Z has a potential to save significant developer effort and reduce cost of application modernization. 
                 The novelty of the solution lies in a fine blend of program analysis techniques with Large Language Model (LLM) ideas. I hope this talk will convince you that a clever use of Generative AI can catalyze the task of legacy code modernization in an extremely cost-effective manner.  </p>
         </div>
-      </div>
+      </div >
       <!-- Repeat the structure below for other speakers -->
       
       
-      <div class="col">
+      <div class="col" >
         <div class="speaker-card" data-aos="fade-up">
             <h4>Hridesh Rajan </h4>
             <p><i>IOWA State University, USA </i></p>       
-            <p><b>Title: Generative AI-based Software Engineering: Opportunities, Challenges, and the Road Ahead <p></b>
-            <p><b>Abstract</b> Generative AI (GenAI) as a technology has taken Software Engineering (SE) practices by storm! This integration of software engineering and generative AI has seen tremendous growth, offering a range of opportunities such as automated code generation, bug localization, and sophisticated models for managing the software development lifecycle. However, GenAI-based SE also presents significant challenges. 
-		    The functional correctness of AI-generated software is a primary concern, along with its maintenance. While generated artifacts are technically transparent (whitebox), they often require treatment as pseudo-blackbox entities due to their complex nature, which is less comprehensible compared to manually written code. 
-		    This approach mirrors the caution applied to third-party deliverables, guarding against a false sense of security stemming from in-house, yet not expertise-driven, creation. 
-		    A critical gap in Generative AI is its current limitation in managing non-functional software properties, such as performance and fairness.
-		    Additionally, the reliability and security of AI-generated software remain critical issues. Last but not least, the environment impact and accessibility of GenAI-based SE remains an open question. 
-		    This discussion aims to shed light on our research and ongoing efforts in the field, offering more questions than answers. 
-		    It is intended to spark a dialogue during the workshop, encouraging exploration and debate on these emerging and vital issues in GenAI and SE.  </p><br>
+            <p ><b >Title: Generative AI-based Software Engineering: Opportunities, Challenges, and the Road Ahead <p></b>
+            <p ><b>Abstract</b> Generative AI (GenAI) as a technology has taken Software Engineering (SE) practices by storm! This integration of software engineering and generative AI has seen tremendous growth, offering a range of opportunities such as automated code generation, bug localization, and sophisticated models for managing the software development lifecycle. However, GenAI-based SE also presents significant challenges. The functional correctness of AI-generated software is a primary concern, along with its maintenance. While generated artifacts are technically transparent (whitebox), they often require treatment as pseudo-blackbox entities due to their complex nature, which is less comprehensible compared to manually written code. This approach mirrors the caution applied to third-party deliverables, guarding against a false sense of security stemming from in-house, yet not expertise-driven, creation. 
+              A critical gap in Generative AI is its current limitation in managing non-functional software properties, such as performance and fairness. Additionally, the reliability and security of AI-generated software remain critical issues. Last but not least, the environment impact and accessibility of GenAI-based SE remains an open question. 
+              This discussion aims to shed light on our research and ongoing efforts in the field, offering more questions than answers. It is intended to spark a dialogue during the workshop, encouraging exploration and debate on these emerging and vital issues in GenAI and SE.  </p><br id="Vikrant">
      </div>
       </div>
-	<div class="col">
+	<div class="col" >
         <div class="speaker-card" data-aos="fade-up">
             <h4>Vikrant Kaulgud  </h4>
             <p><i>Accenture Labs, India </i></p>
@@ -214,7 +219,7 @@
                 Finally, we will peak into the future to understand how autonomous agents could alter the way we think of SDLC. </p>
            </div>
       </div>
-      <div class="col">
+      <div class="col" id="Jyothi">
         <div class="speaker-card" data-aos="fade-up">
             <h4>Jyothi Vedurada  </h4>
             <p><i>IIT Hyderabad, India </i></p>
