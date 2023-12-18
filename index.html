@@ -56,7 +56,7 @@
         }
         th, td {
             font-size: xx-small;
-            padding: 5px;
+            padding: 8px;
             text-align: left;
         }
     </style>
@@ -90,11 +90,22 @@
 	<a class="navbar-brand" href="#CallForAbstract" >
     Call For Abstract</a>
 
-    <a class="navbar-brand" href="#schedule" >
+    <!--<a class="navbar-brand" href="#schedule" >
         Program</a>
+     <a class="navbar-brand" href="speaker.html" >
+            Invited Speakers</a> -->
+        <div class="dropdown" style="margin-top: 17px;">
+            <a class="navbar-brand dropdown-toggle" href="#" role="button" id="programDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                Program
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="programDropdown">
+                <li><a class="dropdown-item" href="#schedule">Schedule</a></li>
+                <li><a class="dropdown-item" href="speaker.html">Invited Speakers</a></li>
+                
+            </ul>
+        </div>
         
-        <a class="navbar-brand" href="speaker.html" >
-            Invited Speakers</a>     
+           
 
         <a class="navbar-brand" href="#venue" >
           Venue & Registration</a>
@@ -109,10 +120,7 @@
    </div>
   </nav>
 
-<!--      <div><img src="img/robot.jpg" class="img-fluid" alt="image"></div> -->
-  
 
-      <!--Banner option #2-->
       
       <div id="banner-top">
         
@@ -122,60 +130,131 @@
       </div> 
       
         
-<!-- Main Content -->
-<!doctype html>
 
+<!doctype html>
   <head>
     <meta charset="utf-8">
     <title>Workshop on GenAi Based Software Engineering</title>
   </head>
   <body>
-    
-        <div style="margin-left: 40px;margin-right: 40px;">
-          <!--  <h3 id="" style=" font-family: Georgia, 'Times New Roman', Times, serif;">GenAI4SE</h3>-->
-                <br>
-                <div class="row" style="content: '';display: table;clear: both;">
-                    <h3 id="" >Objective of Workshop</h3>
-                        
-                    <p>
-                       The Software Development Life Cycle (SDLC) governs the creation of software systems, encompassing 
-                       various engineering phases such as requirement specification, design, coding, testing, and maintenance. 
-                       Software development is an effort-intensive and time-consuming activity whereas systems today need to 
-                       reflect changes as quickly as possible. Most complex, large-scale software systems of today derive their 
-                       requirements from existing (legacy) software and partial (incomplete) descriptions. 
-                       Software development is thus a complex combination of transformation, reverse and forward engineering, 
-                       involving code, data, and specifications, where data is both structured and unstructured. Expertise from 
-                       subject matter specialists (SMEs) is essential at each phase, which brings in the important component of 
-                       knowledge. While Model-Driven Engineering (MDE), Knowledge Engineering (KE), and Reverse 
-                       Engineering (RE) have mitigated some of the challenges, the emergence of Generative AI techniques holds 
-                       the potential for a substantial breakthrough. These techniques empower SMEs to construct purposeful 
-                       engineering artifacts using natural language interactions.
-                    </p>
-                   <p>
-                       The proposed workshop aims to provide a collaborative platform for researchers and practitioners to 
-                       delve into the convergence of traditional MDE, KE, and RE methodologies together with Generative AI 
-                       technologies. By synergizing the strengths of Gen AI, modeling, and knowledge representation for SDLC,
-                       our goal is to define a trajectory toward enhanced software engineering practices. We seek discussion on the following pivotal questions:
-                   
-                    <p>
-                    <ol style="font-size: 1px;margin-left: 50px;">
-                            <li>The development of industry-strength software is a multi-skill, long-drawn activity that cannot be effectively addressed by LLMs alone. What’s the right augmentation required? </li>
-                            <li>LLM is a vast storehouse of general information, but the typical need during software development is rather sharply focused. How best to bear local knowledge to get the required focus? </li>
-                            <li>Should one have to go to LLM every time and be vulnerable to its limitations?</li>
-                            <li>Is fine-tuning LLM the only way, or purposive knowledge representation can perform far better at times? </li>
-                            <li>Can Generative AI play a role in constructing purpose-driven knowledge representations?</li>
-                            <li>How can Generative AI enhance the program analysis-driven techniques for understanding programs and extracting knowledge?</li>
-                            <li>How does Generative AI outshine other natural language processing techniques in software engineering contexts?</li>
-                            <li>How can Generative AI enhance the synthesis of tests and test data for a given set of requirements, and given code?</li>
-                            <li>Can problem fixes and change requests be analyzed and implemented expeditiously using Generative AI?</li>
-                    </ol>       
-                   
-                   <P id="CallForAbstract">The workshop aims to foster interactive discussions, enabling participants to collectively shape the future of advanced software engineering. The inaugural edition will feature <a href="speaker.html">talks by invited speakers</a> who are exploring one or more of the above questions, interspersed with <a href="">short experiences of researchers</a> who are exploring specific challenges of software engineering using GenAI techniques. Time permitting, we will have <a href="">short lightening talks</a> by researchers to share interesting observations and anecdotes.</p>
-                   </div>
-                   
-        </div>
+    <div style="display: flex; justify-content: space-between; margin-left: 40px; margin-right: 40px;">
+
+    <div style="flex-basis: 60%;">
+        <br>
+        <h3 style="margin-left: 20px;">Objective of Workshop</h3> <hr>
+        <p>
+            The Software Development Life Cycle (SDLC) governs the creation of software systems, encompassing 
+            various engineering phases such as requirement specification, design, coding, testing, and maintenance. 
+            Software development is an effort-intensive and time-consuming activity whereas systems today need to 
+            reflect changes as quickly as possible. Most complex, large-scale software systems of today derive their 
+            requirements from existing (legacy) software and partial (incomplete) descriptions. 
+            Software development is thus a complex combination of transformation, reverse and forward engineering, 
+            involving code, data, and specifications, where data is both structured and unstructured. Expertise from 
+            subject matter specialists (SMEs) is essential at each phase, which brings in the important component of 
+            knowledge. While Model-Driven Engineering (MDE), Knowledge Engineering (KE), and Reverse 
+            Engineering (RE) have mitigated some of the challenges, the emergence of Generative AI techniques holds 
+            the potential for a substantial breakthrough. These techniques empower SMEs to construct purposeful 
+            engineering artifacts using natural language interactions.
+         </p>
+        <p>
+            The proposed workshop aims to provide a collaborative platform for researchers and practitioners to 
+            delve into the convergence of traditional MDE, KE, and RE methodologies together with Generative AI 
+            technologies. By synergizing the strengths of Gen AI, modeling, and knowledge representation for SDLC,
+            our goal is to define a trajectory toward enhanced software engineering practices. We seek discussion on the following pivotal questions:
         
-        
+         <p>
+            <p>
+                <ol style="font-size: 1px;margin-left: 50px;">
+                        <li>The development of industry-strength software is a multi-skill, long-drawn activity that cannot be effectively addressed by LLMs alone. What’s the right augmentation required? </li>
+                        <li>LLM is a vast storehouse of general information, but the typical need during software development is rather sharply focused. How best to bear local knowledge to get the required focus? </li>
+                        <li>Should one have to go to LLM every time and be vulnerable to its limitations?</li>
+                        <li>Is fine-tuning LLM the only way, or purposive knowledge representation can perform far better at times? </li>
+                        <li>Can Generative AI play a role in constructing purpose-driven knowledge representations?</li>
+                        <li>How can Generative AI enhance the program analysis-driven techniques for understanding programs and extracting knowledge?</li>
+                        <li>How does Generative AI outshine other natural language processing techniques in software engineering contexts?</li>
+                        <li>How can Generative AI enhance the synthesis of tests and test data for a given set of requirements, and given code?</li>
+                        <li>Can problem fixes and change requests be analyzed and implemented expeditiously using Generative AI?</li>
+                </ol>      
+              <P id="CallForAbstract">The workshop aims to foster interactive discussions, enabling participants to collectively shape the future of advanced software engineering. The inaugural edition will feature <a href="speaker.html">talks by invited speakers</a> who are exploring one or more of the above questions, interspersed with <a href="">short experiences of researchers</a> who are exploring specific challenges of software engineering using GenAI techniques. Time permitting, we will have <a href="">short lightening talks</a> by researchers to share interesting observations and anecdotes.</p>
+            
+    </div>
+ 
+    <div style="flex-basis: 40%;margin-right: 80px;"><br><br><br><br>
+        <table border="1" style="width: 100%;">
+            <colgroup>
+                <col span="1" style="width: 30%;">
+                <col span="1" style="width: 70%;">
+            </colgroup>
+            <tr>
+                <td colspan="2" style="background:#686868;border-right:0.2px inset #2e2e30;text-align:center;color: aliceblue;"><br />
+                <p style="text-align:center;"><strong><a style="color: aliceblue;" href="speaker.html">Invited Speakers</a></strong></p>
+                </td>
+            </tr>
+           
+            <tr>
+                <td>
+                    <p style="text-align:center;">Aditya Kanade</p>
+                    <p style="text-align:center;font-size: 11px;font-style: italic;">Microsoft Research, India</p>
+                </td>
+                <td >
+                    <p style="text-align:center;font-size: 11px;"><a href="speaker.html#Aditya">Making LLMs Usable in Large-scale Software Engineering</a></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p style="text-align:center;">Dinesh Garg</p>
+                    <p style="text-align:center;font-size: 11px;font-style: italic;">IBM Research, India</p>
+                </td>
+                <td>
+                    <p style="text-align:center;font-size: 11px;"><a href="speaker.html#Dinesh">Generative AI for Cobol-to-Java Translation </a></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p style="text-align:center;">Disha Shrivastava</p>
+                    <p style="text-align:center;font-size: 11px;font-style: italic;">Google, UK</p>
+                </td>
+                <td>
+                    <p style="text-align:center;font-size: 11px;"><a href="speaker.html#Disha">Effectively Utilizing Contextual Cues for LLMs of Code</a></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p style="text-align:center;">Hridesh Rajan</p>
+                    <p style="text-align:center;font-size: 11px;font-style: italic;">IOWA State University, USA</p>
+                </td>
+                <td>
+                    <p style="text-align:center;font-size: 11px;"><a href="speaker.html#Hridesh">Generative AI-based Software Engineering: Opportunities, Challenges, and the Road Ahead</a></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p style="text-align:center;">Jyothi Vedurada</p>
+                    <p style="text-align:center;font-size: 11px;font-style: italic;">IIT Hyderabad, India</p>
+                </td>
+                <td>
+                    <p style="text-align:center;font-size: 11px;"><a href="speaker.html#Vikrant">TBA</a></p>
+                </td>
+            </tr>
+            <tr>
+                <td >
+                    <p style="text-align:center;">Vikrant Kaulgud</p>
+                    <p style="text-align:center;font-size: 11px;font-style: italic;">Accenture Labs, India</p>
+                </td>
+                <td >
+                    <p style="text-align:center;font-size: 11px;"><a href="speaker.html#Vikrant">Gen AI assisted SLDC – A peek into the past, present and future</a></p>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<!--<div style="margin-left: 40px;margin-right: 40px;">
+    <P id="CallForAbstract">The workshop aims to foster interactive discussions, enabling participants to collectively shape the future of advanced software engineering. The inaugural edition will feature <a href="speaker.html">talks by invited speakers</a> who are exploring one or more of the above questions, interspersed with <a href="">short experiences of researchers</a> who are exploring specific challenges of software engineering using GenAI techniques. Time permitting, we will have <a href="">short lightening talks</a> by researchers to share interesting observations and anecdotes.</p>
+
+  
+</div>-->
+   
         <div class="columns" >
             
             <div class="left-column">
@@ -203,14 +282,7 @@
                             <p><b>Submission Information :</b> Abstract should be original work in text format written in english not more than 500 words and submitted via the form.  In case of any questions, you can write an email to <a href="mailto: GenAIForSE.ISECWorkshop@tcs.com">GenAIForSE.ISECWorkshop@tcs.com</a></p>
                             <p><b>Acceptance criteria :</b> Abstracts will be selected based on reviews by the workshop organizing committee. Criteria will be the clarity of articulation of the problem being solved, bringing out the specific need for Generative AI to solve the problem and the novelty of the approach. Authors of accepted abstracts will receive further instructions for submitting camera-ready presentations. At least one of the authors MUST register for the ISEC conference, and attend the conference in-person to present their exploration and innovation at the workshop.</p>
 
-                            <!--
-                            <p><b>Submission Information :</b> Abstract should be original work in text format written in english (max 500 words). You can submit your abstract <a href="https://forms.gle/4UqNFpSJb6hSbnxq6">here</a>.  In case of any questions, you can write an email to <a href="mailto: GenAIForSE.ISECWorkshop@tcs.com">GenAIForSE.ISECWorkshop@tcs.com</a></p>
-                            <p><b>Acceptance criteria :</b> Abstracts will be selected based on reviews by members of the workshop organizing committee. The criteria will be the clarity of articulation of the problem being solved, bringing out the specific need for Generative AI to solve the problem and the novelty of the approach.
-                                Authors of accepted abstracts will receive further instructions for submitting camera-ready presentations. At least one of the authors MUST register for the ISEC conference to present their paper.</p>
-                            -->
-                            <!--<b><p>You can submit your abstract over the web using the URL:<a href=""> https://to-be-created.</a>. In case of any questions, you can write an email to <a href="mailto: GenAIForSE.ISECWorkshop@tcs.com">GenAIForSE DOT Workshop AT tcs DOT com</a></p></b>-->
-
-
+                          
                     </div>
             </div>
             <div class="right-column" id="table">
@@ -283,144 +355,32 @@
                         
                     </div>
                 </div>
-               <!-- <h3 id="venue"></h3>
-                <br><br><br><br><br><br><br>
-               <h3 id="venue" style="margin-left: 80px;">Venue & Registration</h3>
-            <hr style="margin-left: 60px;">
-            <p style="margin-left: 80px;">Please check out the <a href="https://conf.researchr.org/home/isec-2024">conference page</a> for workshop location and need to register for the conference.</p>   -->   
-            <br id="schedule">
+             <br id="schedule">
             </div>
         </div>
 
-        <h3 id="schedule"></h3>
-        <!--<hr><br>
-        <h3 id="schedule" style="text-align: center;">Program</h3>-->
-        
-        
-        <div class="columns">
-            <div class="left-column" id="table" >
-                <h3 id="" style="margin-left: 40px;">Program</h3><hr style="margin-left: 30px;">
-                <!--<div class="row" style="content: '';display: table;clear: both;">-->
-                    
-                    <div class="table-container">
-                        <table>
-                            <tr>
-                                <td colspan="2" width="982" class="col-md-12" style="background:#f0f0f0;border-right:0.2px inset #2e2e30;text-align:center;color: rgb(106, 107, 107);"><br />
-                                <p style="text-align:center;"><strong>Schedule</strong></p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="2" width="982" class="col-md-12" style="border-right:0.2px inset #2e2e30;text-align:center;color: rgb(107, 114, 204);"><br />
-                                <p style="text-align:center;"><strong>Coming soon... </strong></p>
-                                </td>
-                                <h3 id="venue"></h3>
-                            </tr>
-                        </table>
-                        
-                        <br>   
-                    </div>
-                    
-                <!--</div>-->
-                
-                <br>
-                <h3 id="" style="margin-left: 40px;">Venue </h3><hr style="margin-left: 30px;">
-                <p style="text-align:left;margin-left: 50px;"><strong>Please visit the <a href="https://conf.researchr.org/home/isec-2024"> ISEC Conference page</a> for workshop location and registration.</strong></p>
-
-               <!--<br><br>
-                <table style="margin-left: 80px; ">
-                    <tr>
-                        <td colspan="2" width="982" class="col-md-12" style="background:#f7f7f7;border-right:0.2px inset #2e2e30;text-align:center;color: rgb(0, 0, 0);border: none;"><br />
-                        <p style="text-align:center;"><strong>Venue & Registration</strong></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2" width="982" class="col-md-12" style="border-right:0.2px inset #2e2e30;text-align:center;"><br />
-                        <p style="text-align:center;"><strong>Please visit the <a href="https://conf.researchr.org/home/isec-2024"> ISEC conference page</a> for workshop location and registration.</strong></p>
-                        </td>
-                    </tr>
-                    
-                </table>-->
-
-
-               
-            </div>
-            <div class="right-column" id="table">
-               <!-- <div class="row" style="content: '';display: table;clear: both; margin-left: 0px;" >-->
-               <p></p>    <br/>
-                <div class="Schedule" >
-                    <table>
-                        <tr>
-                            <td colspan="2" width="982" class="col-md-12" style="background:#686868;border-right:0.2px inset #2e2e30;text-align:center;color: aliceblue;"><br />
-                            <p style="text-align:center;" ><strong><a href="speaker.html" style="color: aliceblue;">Invited Speakers </a></strong></p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td width="200" style="text-align:center;color: rgb(0, 0, 0);"><br />
-                                <p style="text-align:center;"><strong>Name</strong></p>
-                                </td>
-                                <td width="400" style="text-align:center;color: rgb(0, 0, 0);"><br />
-                                <p style="text-align:center;"><strong>Organization/Institution</strong></p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td width="400" >
-                                <p style="text-align:center;">Aditya Kanade</p>
-                            </td>
-                            <td width="400" >
-                                <p style="text-align:center;">Microsoft Research, India</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td width="400" >
-                                <p style="text-align:center;">Dinesh Garg</p>
-                            </td>
-                            <td width="400" >
-                                <p style="text-align:center;">IBM Research, India</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td width="400" >
-                                <p style="text-align:center;">Disha Shrivastava</p>
-                            </td>
-                            <td width="400" >
-                                <p style="text-align:center;">Google, UK</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td width="400" >
-                                <p style="text-align:center;">Hridesh Rajan</p>
-                            </td>
-                            <td width="400" >
-                                <p style="text-align:center;">IOWA State University, USA</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td width="400" >
-                                <p style="text-align:center;">Jyothi Vedurada</p>
-                            </td>
-                            <td width="400" >
-                                <p style="text-align:center;">IIT Hyderabad, India</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td width="400" >
-                                <p style="text-align:center;">Vikrant Kaulgud</p>
-                            </td>
-                            <td width="400" >
-                                <p style="text-align:center;">Accenture Labs, India</p>
-                            </td>
-                        </tr>
-                    </table>
-                        
-                    </div>
-               <!-- </div>-->
-               
-                        
-               
-            </div>
-        </div>
             
-        <h3 id="organizers"></h3>
+        <hr>
+        <h3 id="" style="text-align: center;">Program</h3><hr style="margin-left: 30px;">
+            
+            <div class="table-container">
+                <table style="margin-left: 210px;">
+                    <tr>
+                        <td colspan="2" width="982" class="col-md-12" style="background:#f0f0f0;border-right:0.2px inset #2e2e30;text-align:center;color: rgb(106, 107, 107);"><br />
+                        <p style="text-align:center;"><strong>Schedule</strong></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" width="982" class="col-md-12" style="border-right:0.2px inset #2e2e30;text-align:center;color: rgb(107, 114, 204);"><br />
+                        <p style="text-align:center;"><strong>Coming soon... </strong></p>
+                        </td>
+                    </tr>
+                </table>
+                
+                <br>   
+            </div>
+
+      <h3 id="organizers"></h3>
         <hr><br>
         <h3 id="organizers" style="text-align: center;">Organizers</h3>
         <hr>
@@ -463,7 +423,10 @@
             </div>
         </div>
 
-        
+        <br><hr>
+        <h3 id="venue" style="text-align:center;">Venue </h3><hr>
+        <p style="text-align:center;margin-left: 50px;"><strong>Please visit the <a href="https://conf.researchr.org/home/isec-2024"> ISEC Conference page</a> for workshop location and registration.</strong></p>
+
         <footer >
             <div class="footer-content" style="padding-left: 20px;">
                 <p>For more information, <a href="https://conf.researchr.org/details/isec-2024/isec-2024-workshops/3/Generative-AI-based-Software-Engineering" target="_blank">visit</a>.</p>
