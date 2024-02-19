@@ -14,45 +14,7 @@
     <!-- Custom css--> <link rel="stylesheet" href="assets/styles.css">
 
     <style>
-	            /* Custom CSS for mobile optimization */
-@media only screen and (max-width: 768px) {
-    .navbar-nav .nav-link {
-        padding: 0.5rem 1rem;
-    }
-    #banner-top {
-        padding: 20px;
-    }
-    #banner-top h1 {
-        font-size: 24px;
-    }
-    #banner-top h3 {
-        font-size: 16px;
-    }
 
-    /* Apply styles when screen width is 767px or less */
-    /* Stack the flex items vertically */
-  div[style="display: flex; justify-content: space-between; margin-left: 40px; margin-right: 40px;"] {
-    flex-direction: column;
-  }
-  
-  /* Adjust the margin for better spacing */
-  div[style="flex-basis: 40%; margin-right: 80px;"] {
-    margin-right: 0;
-  }
-  /* CSS for mobile view */
-    .columns {
-        flex-direction: column;
-    }
-
-    .right-column {
-        order: 1; /* Change the order of the right column */
-    }
-    .organizer {       flex-direction: column;   }   
-    
-    table.center {
-      flex-direction: column;
-    }
-}
         .content {
             flex: 1;
         }
@@ -99,6 +61,48 @@
             padding: 8px;
             text-align: left;
         }
+	            /* Custom CSS for mobile optimization */
+@media only screen and (max-width: 768px) {
+    .navbar-nav .nav-link {
+        padding: 0.5rem 1rem;
+    }
+    #banner-top {
+        padding: 20px;
+    }
+    #banner-top h1 {
+        font-size: 24px;
+    }
+    #banner-top h3 {
+        font-size: 16px;
+    }
+
+    /* Apply styles when screen width is 767px or less */
+    /* Stack the flex items vertically */
+  div[style="display: flex; justify-content: space-between; margin-left: 40px; margin-right: 40px;"] {
+    flex-direction: column;
+  }
+  
+  /* Adjust the margin for better spacing */
+  div[style="flex-basis: 40%; margin-right: 40px;"] {
+    margin-left: 0px;
+  }
+  /* CSS for mobile view */
+    .columns {
+        flex-direction: column;
+    }
+
+    .right-column {
+        order: 1; /* Change the order of the right column */
+    }
+    
+    .organizer {       flex-direction: column;   }   
+    table {
+        width: 100%;
+        margin-left: 0px;
+    }
+  
+    
+}
     </style>
   </head>
 
